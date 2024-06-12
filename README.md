@@ -1,6 +1,6 @@
 # Сложно сосредоточиться
 
-https://github.com/AlexeyGustav/slozhno-sosredotochitsya-1
+https://github.com/AlexeyGustav/slozhno-sosredotochitsya/edit/main/README.md
 
 ## В проекте реализованны:
 * Адаптивная вёрстка
