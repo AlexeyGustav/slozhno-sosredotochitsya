@@ -3,3 +3,452 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+
+.header {
+  min-height: 91.5vh;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .header {
+    min-height: 121.5vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    min-height: 79.5vh;
+  }
+}
+
+.decorated-zone {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header__theme-menu {
+
+}
+
+.corner-right::before {
+  content: "";
+  inline-size: 25px;
+  block-size: 25px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+@media (max-width: 464px) {
+  .corner-right::before {
+    right: 10px;
+    top: 10px;
+  }
+}
+
+h1 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  padding-block-start: 28.5vh;
+}
+
+@media (max-width: 768px) {
+h1 {
+    padding-block-start: 147px;
+  }
+}
+
+@media (max-width: 464px) {
+  h1 {
+    padding-block-start: 80px;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 116px;
+    padding-block-start: 71px;
+    padding-inline-start: 10px;
+    line-height: 0.8;
+  }
+}
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 21px;
+  padding-block-start: 22px;
+}
+
+@media (max-width: 768px) {
+  .header__theme-menu-list {
+    flex-direction: column;
+    justify-content: end;
+    text-align: right;
+    gap: 13px;
+    padding-block-start: 185px;
+    margin-inline-end: 26px;
+  }
+} 
+
+@media (max-width: 464px) {
+  .header__theme-menu-list {
+    padding-block-start: 100px;
+    margin-inline-end: 16px;
+    }
+}
+
+@media (max-width: 375px) {
+  .header__theme-menu-list {
+    padding-block-start: 75px;
+    }
+}
+
+.header__theme-menu-item {
+}
+.header__theme-menu-button {
+  text-align: center;
+  font-family: var(--current-color);
+  line-height: 1;
+  background-color: transparent;  
+  border: 1px solid transparent;
+  text-transform: lowercase;
+  padding: 2px 10px;
+  cursor: pointer;
+}
+.header__theme-menu-button_type_light {
+}
+.header__theme-menu-button_active {
+}
+.header__theme-menu-button_type_auto {
+}
+.header__theme-menu-button_type_dark {
+}
+.header__text {
+  width: clamp(22.75rem, -1.063rem + 49.61vw, 30.688rem);
+  float: right;
+  font-family: var(--current-font);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-inline-end: 20px;
+  margin-block-start: 9vh;
+}
+
+@media (max-width: 768px) {
+  .header__text {
+    margin-block-start: 0h;
+    margin-inline-end: 10px;
+    margin-inline-start: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__text {
+    max-width: 355px;
+    margin-block-start: 7vh;
+  }
+}
+
+.corner-left::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+@media (max-width: 464px) {
+  .corner-left::after {
+    left: 10px;
+    bottom: 10px;
+  }
+}
+
+/* секция  ( Почему сосредоточиться так сложно ) */
+
+.question {
+  display: grid;
+  grid-template-columns: minmax(236px, 314px) 1fr;
+  box-sizing: border-box;
+  padding: var(--padding-page);
+}
+
+@media (max-width: 768px) {
+  .question {
+    grid-template-columns: 236px 1fr;
+  }
+}
+
+@media (max-width: 464px) {
+  .question {
+    grid-template-columns: 1fr;
+  }
+}
+  
+.question-sizes {
+  padding-block-start: 59px;
+}
+
+@media (max-width:375px) {
+  .question-sizes {
+    padding-block-start: 40px;
+  }
+}
+ 
+.name {
+  color: inherit;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+@media (max-width: 464px) {
+  .name{
+    padding-block-end: 20px;
+  }
+}
+
+.question__description {
+  padding-inline-start: 20px;
+}
+
+@media (max-width: 464px) {
+  .question__description{
+    padding-inline-start: 0;
+  }
+}
+
+.description {
+  color: inherit;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.text {
+  color: inherit;
+  font-family: inherit;
+  line-height: 1.3;
+  padding: 10px 0 20px;
+}
+
+/* секция  ( Что снижает концентрацию внимания? ) */
+
+.concentration {
+  margin: 60px auto;
+  padding: var(--padding-page);
+}
+
+@media (max-width: 464px) {
+  .concentration {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .concentration {
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 464px) {
+  .concentration, .picture, .question {
+    --padding-page: 10px;
+  }
+}
+
+.concentration .name {
+  width: clamp(14.75rem, -0.063rem + 30.86vw, 19.688rem);
+  padding-block-end: 20px;
+}
+
+@media (max-width: 464px) {
+  .concentration .name  {
+    width: 100%;
+  }
+}
+
+.concentration__description {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .concentration__description {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+}
+
+/* секция  ( Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд) ) */
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.question__description_link {
+  text-decoration: none;
+}
+
+/* секция  ( А можно в картинках? ) */
+
+.picture {
+  margin-top: 60px;
+  padding: var(--padding-page);
+}
+
+@media (max-width: 464px) {
+  .picture {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .picture {
+    margin-top: 9px;
+  }
+}
+
+.picture .description {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 375px) {
+  .picture .description {
+    margin-bottom: 11px;
+  }
+}
+
+.picture__container {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(229px, 315px));
+  grid-template-rows: 260px 315px 428px;
+  grid-template-areas: 
+  "sunset sunset cream"
+  "cassettes books cream"
+  "cassettes street street";
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .picture__container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 192px 230px 318px;
+  }
+}
+
+@media (max-width: 464px) {
+  .picture__container {
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 142px 355px 237px 355px 237px;
+    grid-template-areas: 
+    "sunset"
+    "cream"
+    "cassettes"
+    "books"
+    "street";
+    gap: 10px;
+  }
+}
+
+.picture__container div {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+}
+ 
+.sunset {
+  grid-area: sunset;
+}
+.cream {
+  
+  grid-area: cream;
+}
+.cassettes {
+  grid-area: cassettes;
+}
+.books {
+  grid-area: books;
+}
+.street {
+  grid-area: street;
+}
+ 
+.sunset {
+  background-image: url('../images/sunset.png');
+}
+.cream {
+  background-image: url('../images/ice-cream.png');
+}
+.cassettes {
+  background-image: url('../images/tape.png');
+}
+.books {
+  background-image: url('../images/books.png');
+}
+.street {
+  background-image: url('../images/street.png');
+}
+
+/* секция  ( focus ) */
+
+.focus {
+  width: 100%;
+  height: 768px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .focus {
+    height: 1141px;
+  }
+  .focus .corner-right::before{
+    top: 78px;
+  }
+  .focus .corner-left::after{
+    bottom: 79px;
+  }
+}
+
+.focus__name {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  text-align: center;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.29;
+}
+
+@media (max-width: 375px) {
+  .focus {
+    height: 730px;
+  }
+
+  .focus__name {
+    font-size: 116px;
+  }
+
+  .focus .corner-right::before{
+    top: 40px;
+  }
+
+  .focus .corner-left::after{
+    bottom: 43px;
+  }
+}
+
+
+
