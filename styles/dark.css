@@ -18,6 +18,10 @@
   background-image: url('../images/cover-image-dark.png');
 }
 
+.theme_dark .corner-left::after {
+  --current-color: #FF0070;
+}
+
 .theme_dark .header__text {
   --accentuate-color: #FF0070;
   --current-color: #000028;
