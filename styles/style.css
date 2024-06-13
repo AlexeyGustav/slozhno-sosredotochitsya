@@ -473,13 +473,10 @@
   justify-content: center;
   position: relative;
   text-align: center;
-  margin-block-start: 70px;
+  /* margin-block-start: 70px; */
 }
 
 @media (max-width: 768px) {
-  .focus {
-    height: 1141px;
-  }
   .focus::before{
     top: 78px;
   }
