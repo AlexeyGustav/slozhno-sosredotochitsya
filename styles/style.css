@@ -108,8 +108,13 @@
 }
 
 @media (max-width: 464px) {
-  .header::after, .header::before {
+  .header::after {
     left: 10px;
+    bottom: 10px;
+  }
+
+  .header::before {
+    right: 10px;
     bottom: 10px;
   }
 }
@@ -173,7 +178,7 @@
 @media (max-width: 464px) {
   .header__theme-menu-list {
     padding-block-start: 100px;
-    margin-inline-end: 16px;
+    margin-inline-end: 13px;
     }
 }
 
