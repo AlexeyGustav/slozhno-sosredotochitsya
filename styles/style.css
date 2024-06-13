@@ -473,10 +473,13 @@
   justify-content: center;
   position: relative;
   text-align: center;
-  padding-block-start: 70px;
-}
+  }
 
 @media (max-width: 768px) {
+  .focus {
+    margin-block-start: 40px;
+  }
+
   .focus::before{
     top: 78px;
   }
@@ -487,7 +490,7 @@
 
 @media (max-width: 375px) {
   .focus {
-    height: 730px;
+    /* height: 730px; */
   }
 
   .focus::before{
