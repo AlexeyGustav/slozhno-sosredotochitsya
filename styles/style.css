@@ -355,7 +355,8 @@
 /* секция  ( А можно в картинках? ) */
 
 .picture {
-  margin-top: 60px;
+  margin-top: 11px;
+  /* margin-top: 60px; */
   padding: var(--padding-page);
 }
 
