@@ -476,7 +476,7 @@
   }
 
 @media (max-width: 768px) {
-  .focus {
+  .focus .focus__name{
     margin-block-start: 40px;
   }
 
