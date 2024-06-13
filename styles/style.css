@@ -473,9 +473,17 @@
   justify-content: center;
   position: relative;
   text-align: center;
-  }
+}
+
+.focus {
+  margin-block-start: 50px;
+}
 
 @media (max-width: 768px) {
+  .focus {
+    margin-block-start: 0px;
+  }
+
   .focus .focus__name{
     margin-block-start: 120px;
   }
