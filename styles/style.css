@@ -477,7 +477,7 @@
 
 @media (max-width: 768px) {
   .focus .focus__name{
-    margin-block-start: 70px;
+    margin-block-start: 100px;
   }
 
   .focus::before{
