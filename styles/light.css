@@ -11,74 +11,28 @@
   */
 }
 
-body {
-  color: var(--current-color);
-  background-color: var(--background-color);
+:root .theme-light {
+  --background-color: #FFF1F7;
+  --accent-color: #ff0070;
+  --current-color: #353430;  
+  --heading-color: #FFC2E6;
+  --bg-color: #ffeef6;
+  --text-shadow: 2px 2px 0 #FF0070;
+  --current-font: "IBM Plex mono", Sans-serif;
+  --padding-page: 0 20px;
+  --accentuate-color: #ff8dcb;
 }
 
-.decorated-zone {
-  background-image: url('../images/cover-image-light.png');
-}
-
-.corner-right::before {
-  border-top: 1px solid var(--current-color);
-  border-right: 1px solid var(--current-color);
-}
-
-.corner-left::after {
-  border-bottom: 1px solid var(--current-color);
-  border-left: 1px solid var(--current-color);
-}
-
-h1 {
-  text-shadow: var(--text-shadow);
-  color: var(--heading-color);
-}
-
-.header__theme-menu-button  {
-  color: var(--current-color);
-}
-
-.header__text {
-  background-color: var(--accentuate-color);
-  color: var(--current-color);
-}
-
-.description {
-  background-color: var(--accentuate-color);
-}
-
-.question__description_link {
-  text-shadow: var(--text-shadow);
-}
-
-.focus__name {
-  color: var(--heading-color);
-  text-shadow: 2px 2px 0px var(--accent-color);
-}
-
-/* Состояния кнопок */
-
-.header__theme-menu-button_active  {
-  outline: 1px solid var(--current-color);
-}
-
-.header__theme-menu-button:hover {
-  outline: 1px solid rgba(50, 49, 45, 0.40);
-}
-
-.header__theme-menu-button:focus, .question__description_link {
-  outline: 1px solid transparent;
-}
-
-.header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--current-color);
-}
-
-.question__description_link:hover {
-  border-bottom: 1px solid var(--current-color);
-}
-
-.question__description_link:focus-visible {
-  outline: 1px solid var(--current-color);
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: #FFF1F7;
+    --accent-color: #ff0070;
+    --current-color: #353430;
+    --heading-color: #FFC2E6;
+    --bg-color: #ffeef6;
+    --text-shadow: 2px 2px 0 #FF0070;
+    --current-font: "IBM Plex mono", Sans-serif;
+    --padding-page: 0 20px;
+    --accentuate-color: #ff8dcb;
+  }
 }

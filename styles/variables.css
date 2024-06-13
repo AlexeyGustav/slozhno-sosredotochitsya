@@ -9,36 +9,13 @@
   --current-color: #353430;  
   --heading-color: #FFC2E6;
   --bg-color: #ffeef6;
-  --text-shadow: 4px 4px 0 var(--accent-color);
+  --text-shadow: 2px 2px 0 #FF0070;
   --current-font: "IBM Plex mono", Sans-serif;
   --padding-page: 0 20px;
   --accentuate-color: #ff8dcb;
 }
 
-:root .theme-light {
-  --background-color: #FFF1F7;
-  --accent-color: #ff0070;
-  --current-color: #353430;  
-  --heading-color: #FFC2E6;
-  --bg-color: #ffeef6;
-  --text-shadow: 4px 4px 0 var(--accent-color);
-  --current-font: "IBM Plex mono", Sans-serif;
-  --padding-page: 0 20px;
-  --accentuate-color: #ff8dcb;
-}
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --background-color: #FFF1F7;
-    --accent-color: #ff0070;
-    --current-color: #353430;
-    --heading-color: #FFC2E6;
-    --bg-color: #ffeef6;
-    --text-shadow: 4px 4px 0 var(--accent-color);
-    --current-font: "IBM Plex mono", Sans-serif;
-    --padding-page: 0 20px;
-    --accentuate-color: #ff8dcb;
-  }
-}
+
 
 
