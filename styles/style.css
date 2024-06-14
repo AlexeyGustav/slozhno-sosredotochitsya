@@ -314,7 +314,7 @@
 
 @media (max-width: 375px) {
   .concentration {
-    margin: 10px auto;
+    margin: 29px auto;
   }
 }
 
@@ -379,7 +379,7 @@
 
 @media (max-width: 375px) {
   .picture {
-    margin-top: 9px;
+    margin-top: 28px;
   }
 }
 
@@ -510,10 +510,16 @@
 
   .focus::before{
     top: 40px;
+    right: 10px;
   }
 
   .focus::after{
-    bottom: 43px;
+    left: 10px;
+    bottom: -20px;
+  }
+
+  .focus .focus__name{
+    margin-block-start: 64px;
   }
 }
 
