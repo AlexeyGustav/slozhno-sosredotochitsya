@@ -68,18 +68,6 @@
   height: 100vh;
 }
 
-/* @media (max-width: 768px) {
-  .header {
-    min-height: 121.5vh;
-  }
-}
-
-@media (max-width: 375px) {
-  .header {
-    min-height: 79.5vh;
-  }
-} */
-
 .decorated-zone {
   position: relative;
 }
@@ -220,7 +208,6 @@
 @media (max-width: 375px) {
   .header__text {
     max-width: 355px;
-    /* margin-block-start: 58px; */
     margin: 58px 10px 0px;
   }
 }
@@ -352,7 +339,6 @@
    }
    
 }
-
 
 /* секция  ( Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд) ) */
 
@@ -504,9 +490,6 @@
 }
 
 @media (max-width: 375px) {
-  .focus {
-    /* height: 730px; */
-  }
 
   .focus::before{
     top: 40px;
