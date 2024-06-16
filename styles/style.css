@@ -66,13 +66,10 @@
 .header {
   min-height: 668px;
   height: 100vh;
-}
-
-.decorated-zone {
   position: relative;
 }
 
-.header::before, .focus::before {
+.decorated-zone::before {
   display: block;
   content: "";
   inline-size: 25px;
@@ -84,7 +81,7 @@
   border-right: 1px solid var(--current-color);
 }
 
-.header::after, .focus::after {
+.decorated-zone::after {
   content: "";
   width: 25px;
   height: 25px;
@@ -93,19 +90,6 @@
   bottom: 20px;
   border-bottom: 1px solid var(--current-color);
   border-left: 1px solid var(--current-color);
-}
-
-@media (max-width: 464px) {
-  .header::after {
-    left: 10px;
-    bottom: 10px;
-  }
-
-  .header::before {
-    top: 10px;
-    right: 10px;
-    bottom: 10px;
-  }
 }
 
 .focus__name {
@@ -168,13 +152,13 @@
   .header__theme-menu-list {
     padding-block-start: 100px;
     margin-inline-end: 13px;
-    }
+  }
 }
 
 @media (max-width: 375px) {
   .header__theme-menu-list {
     padding-block-start: 75px;
-    }
+  }
 }
 
 .header__theme-menu-button {
@@ -200,21 +184,54 @@
 
 @media (max-width: 768px) {
   .header__text {
-    margin-inline-start: 20px;
     margin-block-start: 133px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 575px) {
+  .focus__name {
+    line-height: 1;
+  }
+
+  .header__theme-menu-list {
+    padding-block-start: 80px;
+  }
+
+  .focus-header {
+    padding-block-start: 50px;
+  }
+
+  .header__text {
+    margin-block-start: 20px;
+  }
+}
+
+@media (max-width: 400px) {
   .header__text {
     max-width: 355px;
-    margin: 58px 10px 0px;
+    /* margin: 58px 10px 0px; */
+  }
+}
+
+@media (max-width: 375px) {
+
+  .header__text {
+    margin: 55px 10px 0px;;
+  }
+
+  .focus__name {
+    line-height: 82.5%;
+  }
+
+  .focus-header {
+    padding-block-start: 68px;
   }
 }
 
 /* секция  ( Почему сосредоточиться так сложно ) */
 
 .question {
+  width: 100%;
   display: grid;
   grid-template-columns: minmax(236px, 314px) 1fr;
   box-sizing: border-box;
@@ -239,7 +256,7 @@
 
 @media (max-width:375px) {
   .question-sizes {
-    padding-block-start: 40px;
+    padding-block-start: 44px;
   }
 }
  
@@ -273,23 +290,23 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 1.3;
+  margin-block-end: 10px;
 }
 
 .question__description_text {
   color: inherit;
   font-family: inherit;
   line-height: 1.3;
-  padding: 10px 0 20px;
 }
 
-.question__description_text:last-child {
-  padding: 10px 0 0;
+.question__description article:not(:last-child) {
+  padding-block-end: 20px;
 }
 
 /* секция  ( Что снижает концентрацию внимания? ) */
 
 .concentration {
-  margin: 79px auto;
+  margin: 79px auto 82px;
   padding: var(--padding-page);
 }
 
@@ -336,7 +353,7 @@
 
   .concentration__description div:not(:first-child) {
     padding-block-start: 21px;
-   }
+  }
    
 }
 
@@ -396,6 +413,7 @@
   .picture__container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 192px 230px 318px;
+    padding-block-end: 57px;
   }
 }
 
@@ -411,6 +429,12 @@
     "books"
     "street";
     gap: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .picture__container {
+    padding-block-end: 26px;
   }
 }
 
@@ -469,7 +493,7 @@
 }
 
 .focus {
-  margin-block-start: 70px;
+  margin-block-start: 66px;
 }
 
 @media (max-width: 768px) {
@@ -478,35 +502,41 @@
   }
 
   .focus .focus__name{
-    margin-block-start: 120px;
+    margin-block-start: 5px;
   }
 
-  .focus::before{
-    top: 78px;
+  footer .decorated-zone::before{
+    top: 77px;
   }
-  .focus::after{
-    bottom: 79px;
-  }
+
 }
 
 @media (max-width: 375px) {
 
-  .focus::before{
-    top: 40px;
+  .focus {
+    margin-block-end: 35px;
+  }
+
+  .decorated-zone::before {
+    top: 15px;
     right: 10px;
   }
 
-  .focus::after{
+  .decorated-zone::after{
     left: 10px;
-    bottom: -20px;
+    bottom: 5px;
   }
 
   .focus .focus__name{
-    margin-block-start: 64px;
+    margin-block-start: 12px;
   }
 }
 
 /* Стили для тёмной темы */
+
+.page.theme_dark {
+  background-image: url('../images/cover-image-dark.png');
+}
 
 .theme_dark .header__theme-menu-list {
   gap: 14px;
@@ -524,12 +554,6 @@
 .theme_dark .question__description_text {
   color: #F1B2CE;
 }
-
-.theme_dark .question__description_text:last-child {
-  padding: 10px 0 0;
-}
-
-
 
 /* Состояния кнопок */
 
@@ -569,14 +593,20 @@
   right: 29px;
 }
 
+@media (max-width: 768px) {
+  .theme_dark .focus {
+    margin-block-end: 6px;
+  }
+}
+
 @media (max-width: 375px) {
   .theme_dark .header__rec {
-    top: 12px;
+    top: 20px;
     right: 20px;
   }
 
   .theme_dark .question-sizes {
-    padding-block-start: 41px;
+    padding-block-start: 47px;
   }
 }
   

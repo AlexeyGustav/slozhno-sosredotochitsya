@@ -17,6 +17,7 @@ body {
   font-style: normal;
   color: var(--current-color);
   background-color: var(--background-color);
+  position: relative;
 }
 
 h1,
